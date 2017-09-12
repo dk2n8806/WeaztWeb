@@ -1,0 +1,559 @@
+
+
+<link href="css/generalize.css" rel="stylesheet" type="text/css" />
+<link href="css/utility.css" rel="stylesheet" type="text/css">
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href="css/color.css" rel="stylesheet" type="text/css">
+<link href="css/font.css" rel="stylesheet" type="text/css">
+<link href="css/button.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	var i = 0;
+	while(i++ < 2){
+		$(".review").clone().appendTo(".reviewList");
+		$(".thumbnail-blk li").clone().appendTo(".thumbnail-blk ul");
+		$(".card").clone().appendTo(".card-wrapper");
+	};
+
+
+	var i = 0;
+	while(i++ < 2){
+		$(".col-wrapper.a .col-4").clone().appendTo(".col-wrapper.a");
+	};
+});
+</script>
+
+<script type="text/javascript" src="js/image.js" ></script>
+<script type="text/javascript" src="js/navigation.js" ></script>
+<script type="text/javascript" src="js/util.js" ></script>
+
+
+<style type="text/css">
+.profile-holder {
+	position: relative;
+}
+.profile-ava {
+	border-radius: 50%;
+}
+
+table.style td {
+  border: 1px solid #dbdbdb;
+  padding: 10px;
+  width: 50%;
+}
+
+
+
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: inline-block;
+}
+</style>
+<!-- 
+<div class="main-content">
+	<div class="ph20">
+		<div class="blk">
+			<div class="blk-content prefix-clear">	
+				<div class="card100 prefix-clear">
+					<div class="prefix-clear">
+						<div class="card-face">
+							<div class="card-holder">
+								<a href="#"><img src=""/></a>
+							</div>
+						</div>
+						<div class="card-content">
+							<h2 class="fnor"><a href="#"><strong>Merchant</strong></a></h2>
+							<p class="tgray">OneStopCoffee</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+<br/>
+<div class="mainList1">
+	<div class="main-content">
+		<div class="col-wrapper">
+			<div class="col">
+				<div class="blk toCenter">
+					<div class="blk-header">
+						<h1 class="ftrend title"></h1>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="blk-b">
+					<div class="col-wrapper">
+						<div class="col-2">		
+							<div class="blk-content">
+								<div class="gallery-blk">
+									<div class="main-blk">
+										<span class="gallery"><img src=""/></span>
+									</div>						
+									<div class="thumbnail-blk">
+										<ul>
+											<li>
+												<img src=""/>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<hr/>
+								<div class="p10">
+									<p><strong>Love this product? Subscribe now!</strong></p>
+									<p class="pepleRecommeded" data-recommended="16"></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="blk-content">
+								<h3>Description</h3>
+								<div>
+									<p class="fx1-1">This unique little bird is so cute and shy. She would love to have you as a friend! Pendant is handmade out of sterling silver, hand detailed, and has a matte finish. Pendant measures a little over 1" wide and 3/4" tall (2.5 x 2 cm). Comes on a sterling silver cable chain that is adjustable from 16-18".</p>
+								</div>
+								<hr/>	
+								<h3>Overview</h3>	
+								<div class="modal-content">
+
+									<table class="style">
+										<tr>
+											<td>
+												<span class="toRight">Coffee & Tea</span>
+												<span class="tgray">Category</span>
+											</td>
+											<td>
+												<span class="toRight">$10</span>
+												<span class="tgray">Retail price</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="toRight">4</span>
+												<span class="tgray">Number of shipment</span>
+											</td>
+											<td>
+												<span class="toRight">
+													<span class="tgreen"><i class="fa fa-caret-up"></i>&nbsp;15%</span>
+												</span>
+												<span class="tgray">Save Rate</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="toRight">every 10 days</span>
+												<span class="tgray">Frequency</span>
+											</td>
+											<td>
+												<span class="toRight">$9</span>
+												<span class="tgray">Subscription Price</span>
+											</td>
+										</tr>
+									</table>
+								</div>	
+								<div class="ph10">
+									<form action="${checkoutForm}" method="POST">
+										<input type="hidden" value="${pId }" name="_pid"/>
+										<button style="text-transform: uppercase;"  class="greenBtn btn twhite c-100" type="submit">Subscribe for $20</button>
+									</form>
+								</div>
+								<br/>
+								<div class="toCenter">
+									<a class="link" href="#"><i class="fa fa-bookmark"></i>&nbsp;&nbsp;Save this subscription</a> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br/><br/>
+
+			<div class="col75" style="width: 70%">
+				<div class="blk-b">
+					<div class="panel-header prefix-clear">
+						<h3 class="ftrend"><i class="fa fa-comments-o"></i>&nbsp;&nbsp;Reviews</h3>
+					</div>
+					<div class="blk-content">
+						<div class="reviewList">
+							<div class="review">
+								<div class="reviewContent">
+									<div class="reviewer">
+										<div class="reviewerHolder">
+											<img src="">
+										</div>
+									</div>
+									<div class="reviewInfo">
+										<p><a class="link"><strong>Derek Nguyen</strong></a>&nbsp;&nbsp;<span class="tip">|&nbsp;&nbsp;<span class="ratingStarsContainer"><span class="ratingStars"><i class="fa active fa-star"></i><i class="fa active fa-star"></i><i class="fa active fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;02-12-2000</span></p>
+										<div class="reviewMsg">
+											<p class="more">This unique little bird is so cute and shy. She would love to have you as a friend! Pendant is handmade out of sterling silver, hand detailed, and has a matte finish. Pendant measures a little over 1" wide and 3/4" tall (2.5 x 2 cm). Comes on a sterling silver cable chain that is adjustable from 16-18".</p>
+										</div>
+										<!-- <div class="reviewProduct">
+											<div class="productImg">
+												<div class="productHolder">
+													<img src=""/>
+												</div>
+											</div>
+											<div class="productInfo">
+
+												<p class="fontCategory"><i class="fa fa-tags"></i>&nbsp;&nbsp;Coffee & Tea</p>
+												<p class="review-product-title more" ><a class="title"></a></p>
+											</div>
+										</div> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+
+<br/><br/>
+<div class="main-content">
+	<div class="col-wrapper a">
+		
+		<div class="col">
+			<div class="prefix-clear">
+				<h2 class="ftrend">Similar subscriptions you may like</h2>
+			</div>
+		</div>
+		<br/><br/>
+		<div class="col-4">
+			<div class="blk-b story-wrapper">
+				<div class="story-box">
+					<img src="" />
+				</div>
+				<div class="blk-content">
+					<div class="story-title">
+						<p><a class="title" href="item.html"></a></p>
+					</div>
+					<div class="balance-list">
+						<ul class="overviewListing">
+							<li>
+								<p class="overviewListingTitle">Example Category</p>
+								<h4 class="overviewListingStats">$12.00</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+	<p class="toCenter"><a class="link" href="#">View More &nbsp;<i class="fa fa-long-arrow-right"></i></a></p>
+</div>
+<!-- 
+<div class="main-content">
+	<div class="blk-container blkr">
+		<div class="mblk">
+			<div class="col-wrapper">
+				<div class="col">
+					<div class="blk-b">
+						<div class="blk-content">
+							<div class="softLine">
+								<span><strong>Review on: </strong></span>
+								<a class="link active" href="#">All products</a>
+								<span>|</span>
+								<a class="link" href="#">The product</a>
+							</div>
+							<br/>
+							<br/>
+							<div class="review-wrapper">
+								<div class="review">
+									<div class="reviewer">
+										<div class="reviewer-img">
+											<img src="#" />
+										</div>
+										<div class="review-info toCenter"><p>Reviewed By<br/><a class="link" href="#"><strong>Derek N</strong></a><br/>2012.20.12</p></div>
+									</div>
+									<div class="review-details">
+										<div class="review-content">								
+											<p>We didn't meet the guys, but they were always just one text message away in case we had any questions. We've already booked a longer stay in a few months now that we know that this place is of such great quality We've already booked a longer stay in a few months now that we know that this place is of such great quality.</p>
+											<br/>
+											<div class="review-footer">
+												<div class="review-product prefix-clear">
+													<div class="review-product-image-holder">
+														<div class="review-product-img">
+															<img src="#" />
+														</div>
+													</div>
+													<div class="review-product-content">
+														<h4 class="fnor"><strong><a class="title" href="#"></a></strong></h4>
+														<div class="ratingStarsContainer">
+															<span class="ratingStars">
+																<i class="fa active fa-star"></i>
+																<i class="fa active fa-star"></i>
+																<i class="fa active fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+															</span>
+														</div>		
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="p20 toCenter">
+								<a href="#" class="btn plain-btn"><strong>Load more</strong></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sblk">
+			<div class="col-wrapper">
+				<div class="col">
+					<div class="blk-b">
+						<div class="blk-header">
+							<div class="aboutInfo toRight">
+								<button><i class="fa fa-info"></i></button>
+							</div>
+							<h3><strong>Similar Product</strong></h3>
+						</div>
+						<div class="col-wrapper">
+							<div class="col-2">
+								<div class="p5">
+									<div class="story-box">
+										<img src="" />
+									</div>
+									<div class="story-title">
+										<p><a class="title" href="subscription-detail.html"></a></p>
+									</div>
+								</div>	
+							</div>
+							<div class="col-2">
+								<div class="p5">
+									<div class="story-box">
+										<img src="" />
+									</div>
+
+									<div class="story-title">
+										<p><a class="title" href="subscription-detail.html"></a></p>
+									</div>
+								</div>	
+							</div>
+							<div class="col-2">
+								<div class="p5">
+									<div class="story-box">
+										<img src="" />
+									</div>
+									<div class="story-title">
+										<p><a class="title" href="subscription-detail.html"></a></p>
+									</div>
+								</div>	
+							</div>
+							<div class="col-2">
+								<div class="p5">
+									<div class="story-box">
+										<img src="" />
+									</div>
+									<div class="story-title">
+										<p><a class="title" href="subscription-detail.html"></a></p>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="blk-footer">
+							<a class="link" href="#">Discover more&nbsp;<i class="fa fa-angle-double-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+ -->
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+$(document).ready(function() {
+	function overviewInfo() {
+		var $o = $("#pOverview");
+		var mapMsg = {
+			cancelable : [$o.data("cancelable")
+						, "You can cancel this subscription any time"
+						, "You can't cancel this subscription"]
+			, renewable : [$o.data("renewable")
+						, "It's easy to renew this subscription anytime for this current price"
+						, null]
+			, customizable : [$o.data("customizable")
+						, "We deliver as day that you wish"]
+		};
+		var mapData = {
+			feedback : [$o.data("feedback"), "Feedback:", "review", "reviews"]
+			, recommends : [$o.data("recommends"), "Recommended by:", "person", "people"]
+			, favorits : [$o.data("favorites"), "Favorited by:", "person", "people"]
+		};
+
+		var msg = "";
+		for(var m in mapMsg) {
+			var i = 0;
+			if($.type(mapMsg[m][0]) === "boolean") {
+				if(mapMsg[m][0]) {
+					i = 1;
+				} else {
+					i = 2;
+				}
+				
+				if(mapMsg[m][i] != null) {
+					msg += "<li>" + mapMsg[m][i] + "</li>";
+				}
+			}
+		}
+
+		for(var m in mapData) {
+			var data = mapData[m][0];
+			var i = 2;
+			if($.type(data) === "number") {
+				if(data > 1) {
+					i = 3;
+				} else {
+					i = 2;
+				}
+
+				msg += "<li>" + mapData[m][1] +  "&nbsp;" +  "<span class=\"tblue\">" + mapData[m][0] + "&nbsp;" + mapData[m][i] + "</span></li>";
+			}
+		}
+
+
+		$("#pOverview").append("<ul>").append(msg).append("</ul>");
+	}
+	overviewInfo();
+
+	$(".review-social").each(function() {
+		var recommended = $(this).data("recommended");
+		var favorited = $(this).data("favorited");
+		if(recommended) {
+			$(this).append("<span class=\"toLeft tblue pw5\"><i class=\"fa fa-thumbs-o-up\">&nbsp;Recommended</i></span>");
+		}		
+		if(favorited) {
+			$(this).append("<span class=\"toLeft tblue pw5\"><i class=\"fa fa-heart-o\">&nbsp;Favorited</i></span>");
+		}		
+	});
+
+
+	$(".pepleRecommeded").each(function() {
+		var data = $(this).data("recommended");
+		if($.type(data) === "number") {
+			var str = "person";
+			if(data > 1) {
+				str = " people";
+			} 
+			$(this).append("<i class=\"fa tblue fa-thumbs-o-up\"></i>&nbsp;" + data + " " + str + " recommended this product");
+		}
+	});
+
+
+
+	$(".thumbnail-blk li").click(function(){
+		if(!$(this).hasClass("active")){
+			$(".thumbnail-blk li").removeClass("active");
+			$(this).addClass("active");
+			$(".gallery img").attr("src", $(this).find("img").attr("src"));
+		}
+
+
+	});
+
+
+	//alert($("#body-wrapper").width());
+	$(".sblk").each(function() {
+		var $s = $(this);
+		var $p = $s.parent();
+		var $m = $s.siblings(".mblk");
+		if($s.height() > $m.height()) {
+			$p.height($s.height());
+		} 
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+	var showChar = 200;  // How many characters are shown by default
+	var ellipsestext = "...";
+	var moretext = "read more";
+	var lesstext = "show less";
+	
+	
+	$('.more').each(function() {
+	    var content = $(this).html();
+	
+	    if(content.length > showChar) {
+	
+	        var c = content.substr(0, showChar);
+	        var h = content.substr(showChar, content.length - showChar);
+	
+	        var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+	
+	        $(this).html(html);
+	    }
+	
+	});
+	
+	$(".morelink").click(function(){
+	    if($(this).hasClass("less")) {
+	        $(this).removeClass("less");
+	        $(this).html(moretext);
+	    } else {
+	        $(this).addClass("less");
+	        $(this).html(lesstext);
+	    }
+	    $(this).parent().prev().toggle();
+	    $(this).prev().toggle();
+	    return false;
+	});
+});
+
+
+</script>
+
+
+
+
+
+

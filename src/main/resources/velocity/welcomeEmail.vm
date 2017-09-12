@@ -1,0 +1,14 @@
+<html>
+<p>Hi, ${username}</p>
+<p>We're so glad that you signed up to be part of Weazt.</p>
+<p>You just need to verifiy your email address to complete your account signup.</p>
+<br/>
+<p>Simply click this link</p>
+<p><a href="${verifiedLink}">${verifiedLink}</a></p>
+<br/>
+<br/>
+<p>Please note that this link will expire in 2 days.</p>
+<br/>
+<p>Thanks,</p> 
+<p>The Weazt Team</p>
+</html>

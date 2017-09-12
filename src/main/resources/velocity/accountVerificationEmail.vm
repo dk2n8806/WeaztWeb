@@ -1,0 +1,13 @@
+<html>
+
+<p>Hi ${username},</p>
+
+
+<p>To complete email verification, simply click this link:</p>
+
+<p><a href="${verifiedLink}">${verifiedLink}</a></p>
+
+<br/>
+<p>Thanks,</p> 
+<p>The Weazt Team</p>
+</html>
